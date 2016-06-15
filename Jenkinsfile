@@ -1,7 +1,7 @@
 node ('Mac01'){
 
   stage 'Checkout'
-  git checkout scm
+  checkout scm
   
   stage 'Build and Test'
   sh 'xcodebuild -version'
