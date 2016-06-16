@@ -2,6 +2,7 @@ node ('Mac01'){
 
   stage 'Checkout'
   checkout scm
+  sh 'ls -l'
 
   stage 'Build and Test'
   sh 'xcodebuild -version'
