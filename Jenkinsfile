@@ -17,13 +17,7 @@ node ('Mac01'){
   archiveUnitTestResults()
 
   stage 'Commit and Push'
-  
-  if(!sh 'git status -s')
-  {
-    sh 'git add ./ '
-    sh 'git commit -m "Test results"'
-    sh 'git push origin HEAD:master'
-  }
+  sh './committest.sh'
 
 }
 
