@@ -13,7 +13,7 @@ node ('Mac01'){
 
 
   stage 'Archive Test Results'
-  //sh 'touch test-reports/*' //this is a cheat until i find a better solution
+  sh 'touch test-reports/*' //this is a cheat until i find a better solution
   archiveUnitTestResults()
 
 }
