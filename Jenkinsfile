@@ -16,6 +16,11 @@ node ('Mac01'){
   sh 'touch test-reports/*'
   archiveUnitTestResults()
 
+  stage 'Commit and Push'
+  git add ./
+  git commit -m 'Test results'
+  git push
+
 }
 
 def archiveUnitTestResults() {
