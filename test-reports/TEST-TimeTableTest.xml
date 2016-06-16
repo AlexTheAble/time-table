@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><testsuite failures="0" errors="0" hostname="79a8b791d6f645" name="TimeTableTests" tests="2" time="19.0" timestamp="2016-06-15T10:53:38.946-04:00"><testcase classname="TimeTableTests" name="testExample" time="0.001"/><testcase classname="TimeTableTests" name="testPerformanceExample" time="19.426"/></testsuite>
