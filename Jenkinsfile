@@ -13,12 +13,8 @@ node ('Mac01'){
 
 
   stage 'Archive Test Results'
+  //sh 'touch test-reports/*' //this is a cheat until i find a better solution
   archiveUnitTestResults()
-
-  stage 'Push Results to Repo'
-  sh 'git add ./'
-  sh 'git commit -m "Test Results"'
-  sh 'git push origin HEAD:master'
 
 }
 
