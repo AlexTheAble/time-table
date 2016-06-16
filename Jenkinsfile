@@ -16,13 +16,6 @@ node ('Mac01'){
   sh 'touch test-reports/*'
   archiveUnitTestResults()
 
-  stage 'Commit and Push'
-  sh 'if [ git status -s == ""]; then
-    git add ./;
-    git commit -m "Adding test results.";
-    git push origin HEAD:master;
-  fi'
-
 }
 
 def archiveUnitTestResults() {
