@@ -1,7 +1,7 @@
-node ('Mac01'){
+node{
 
   stage 'Checkout' //This step may not do anything productive now
-  checkout scm
+  //checkout scm
 
 
   stage 'Build and Test'
