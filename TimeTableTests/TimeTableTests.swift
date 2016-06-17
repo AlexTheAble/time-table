@@ -29,7 +29,7 @@ class TimeTableTests: XCTestCase {
         for i in 0 ..< 10 {
             for j in 0 ..< 10 {
                 let c = timeTable.multiply(i, b: j)
-                XCTAssert(c == i * j)
+                XCTAssert(c == i / j)
             }
         }
     }
