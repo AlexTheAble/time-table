@@ -6,12 +6,11 @@ node ('Mac01'){
 
   stage 'Build and Test'
   parallel iPhone6: {
-    build 'time-table-iPhone6'
+    build job: 'time-table-iPhone6', propagate: false
   },
   iPhone6s: {
-    build 'time-table-iPhone6s'
+    build job :'time-table-iPhone6s', propagate: false
   },
   failFast: false,
-  propagate: false 
 
 }
