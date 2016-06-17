@@ -6,12 +6,17 @@ node ('Mac01'){
 
   stage 'Build and Test'
 
-    parallel buildBranch:{
+    parallel build6:{
       sh '/usr/bin/agvtool mvers -terse1'
-      sh 'xcodebuild -scheme TimeTable -configuration Debug build -destination "platform=iOS Simulator,id=7F9C4722-89E4-43A9-983B-EB09585FAD2E,OS=9.0"'
+      sh 'xcodebuild -scheme TimeTable -configuration Debug build test -destination "platform=iOS Simulator,id=7F9C4722-89E4-43A9-983B-EB09585FAD2E,OS=9.0"'
     } ,
-    testBranch:{
-      sh 'xcodebuild -scheme TimeTable -configuration Debug test -destination "platform=iOS Simulator,id=7F9C4722-89E4-43A9-983B-EB09585FAD2E,OS=9.0"'
+    build6s:{
+      sh '/usr/bin/agvtool mvers -terse1'
+      sh 'xcodebuild -scheme TimeTable -configuration Debug build test -destination "platform=iOS Simulator,id=66C70574-0277-4667-9A56-072706AAB2C7,OS=9.0"'
+    },
+    build6sPlus:{
+      sh '/usr/bin/agvtool mvers -terse1'
+      sh 'xcodebuild -scheme TimeTable -configuration Debug build test -destination "platform=iOS Simulator,id=77AA5875-C618-4BBF-BDAB-BC44F9610A28,OS=9.0"'
     },
     failFast: true
 
