@@ -6,6 +6,6 @@ node ('Mac01'){
 
   stage 'Build and Test'
 
-  build time-table-iPhone6
-  build time-table-iPhone6s
+  build 'time-table-iPhone6'
+  build 'time-table-iPhone6s'
 }
