@@ -11,6 +11,7 @@ node ('Mac01'){
   iPhone6s: {
     build 'time-table-iPhone6s'
   },
-  failFast: true
+  failFast: false,
+  propagate: false 
 
 }
